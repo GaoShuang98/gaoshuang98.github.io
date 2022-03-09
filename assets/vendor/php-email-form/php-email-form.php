@@ -514,7 +514,7 @@ class PHPMailer
      *
      * @var int
      */
-    public $Port = 465;
+    public $Port = 25;
 
     /**
      * The SMTP HELO/EHLO name used for the SMTP connection.
@@ -525,7 +525,7 @@ class PHPMailer
      *
      * @var string
      */
-    public $Helo = 'ENCRYPTION_SMTPS';
+    public $Helo = '';
 
     /**
      * What kind of encryption to use on the SMTP connection.
@@ -533,7 +533,7 @@ class PHPMailer
      *
      * @var string
      */
-    public $SMTPSecure = 'tls';
+    public $SMTPSecure = '';
 
     /**
      * Whether to enable TLS encryption automatically if a server supports it,
@@ -567,14 +567,14 @@ class PHPMailer
      *
      * @var string
      */
-    public $Username = '高爽';
+    public $Username = '';
 
     /**
      * SMTP password.
      *
      * @var string
      */
-    public $Password = 'faxgbrugfxvobiah';
+    public $Password = '';
 
     /**
      * SMTP auth type.

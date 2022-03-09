@@ -7,7 +7,8 @@
   */
 
   // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = '80602911@qq.com';
+  //   将contact@example.com 替换为您的真实接收电子邮件地址
+  $receiving_email_address = 'huanggaoshuang@qq.com';
 
   if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
     include( $php_email_form );
@@ -24,14 +25,15 @@
   $contact->subject = $_POST['subject'];
 
   // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
-  /*
+  //  如果您想使用 SMTP 发送电子邮件，请取消注释下面的代码。您需要输入正确的 SMTP 凭据 kltfsxrfsfmmbhhc  rgydgbtwgbjpbhdj
+
   $contact->smtp = array(
-    'host' => 'example.com',
-    'username' => 'example',
-    'password' => 'pass',
+    'host' => 'smtp.qq.com',
+    'username' => '高爽',
+    'password' => 'rgydgbtwgbjpbhdj',
     'port' => '587'
   );
-  */
+
 
   $contact->add_message( $_POST['name'], 'From');
   $contact->add_message( $_POST['email'], 'Email');
