@@ -1,69 +1,80 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>OCRcode</title>
-<style type="text/css">
-a {
-    font-size: 18px;
-}
-body,td,th {  
-    font-size: 18px;
-    font-style: normal;
-    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
-}
+    <meta charset="utf-8">
+    <title>QRcode</title>
+    <style>
+        a {
+            font-size: 18px;
+        }
 
+        body, td, th {
+            font-size: 18px;
+            font-style: normal;
+            font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+        }
 
-	#ocrcode{
-	width: 250px;
-	height: 250px;
-	}
+        #QRcode {
+            width: 250px;
+            height: 250px;
+        }
 
-	#top_container{
-		line-height: 10;
-		width: 250px;
-		height: 100px;
-		padding: 20px;
-		margin: 10px;
+        #top_container {
+            line-height: 10;
+            width: 250px;
+            height: 100px;
+            padding: 20px;
+            margin: auto;
 
-	}
-	#foot_container{
-		line-height: 10;
-		width: 250px;
-		height: 150px;
-		padding: 20px;
-		margin: 10px;
+        }
 
-	}
-	#img_container{
-		align-self: center;
-		background-color: rgba(245, 66, 66, 0.24);
-		width: 250px;
-		height: 250px;
-		padding: 20px;
-		border: 5px solid rgba(41, 41, 204, 0.61);
-		margin: auto;  // 设置图片居中
-		
-	}
-	#container{
+        #foot_container {
+            line-height: 10;
+            width: 250px;
+            height: 300px;
+            padding: 20px;
+            margin: auto;
 
-	}
-	
-</style>
+        }
 
-	
+        #img_container {
+            align-self: center;
+            background-color: rgba(245, 66, 66, 0.24);
+            width: 250px;
+            height: 250px;
+            padding: 20px;
+            border: 5px solid rgba(41, 41, 204, 0.61);
+            margin: auto;
+
+        }
+
+        #ground_container {
+            background: url("./assets/img/portfolio/portfolio-6.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-clip: border-box;
+            background-size: cover;
+            position: relative;
+            height: 100%;
+            width: 100%;
+            min-height: 768px;
+            cursor: default;
+        }
+
+    </style>
+</head>
+
 <body>
-	<div id='top_container'></div>
-
-		<div id="img_container">
-		<img id="ocrcode" src="assets/img/wechat_OCR.jpg" alt="Error!" />
-		</div>
-
-	<div id="foot_container"></div>
-
+<div id="ground_container">
+    <div id="top_container"></div>
+    <div id="img_container">
+        <img id="QRcode" src="assets/img/wechat_OCR.jpg" alt="Error!"/>
+    </div>
+    <div id="foot_container"></div>
+</div>
 <footer class="footer">
-  <div class="copyright" align="center"> &copy; Copyright <strong><span>GaoShuang</span></strong></div>
+    <div class="copyright" align="center"> &copy; Copyright <strong><span>GaoShuang</span></strong></div>
 </footer>
 </body>
-	
+
 </html>
