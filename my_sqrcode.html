@@ -13,12 +13,12 @@ body,td,th {
     font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
 }
 
-/*
+
 	#ocrcode{
-	width: 250;
-	height: 250;
+	width: 250px;
+	height: 250px;
 	}
-*/
+
 	#top_container{
 		line-height: 10;
 		width: 250px;
@@ -42,11 +42,11 @@ body,td,th {
 		height: 250px;
 		padding: 20px;
 		border: 5px solid rgba(41, 41, 204, 0.61);
-		margin: 10px;
+		margin: auto;  // 设置图片居中
 		
 	}
 	#container{
-		child-align: middle;
+
 	}
 	
 </style>
@@ -55,11 +55,9 @@ body,td,th {
 <body>
 	<div id='top_container'></div>
 
-	<div id="container">
 		<div id="img_container">
-		<img id="ocrcode" src="assets/img/wechat_OCR.jpg" width="250px" height="250px" align="center" alt="" />
-		</div
-	></div>
+		<img id="ocrcode" src="assets/img/wechat_OCR.jpg" alt="Error!" />
+		</div>
 
 	<div id="foot_container"></div>
 
